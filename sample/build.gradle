@@ -20,9 +20,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile project(':playercontrolview')
-    compile 'com.android.support:appcompat-v7:28.0.0'
-    compile 'com.google.android.exoplayer:exoplayer:2.11.3'
+    implementation project(':playercontrolview')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.3'
 }
